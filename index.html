@@ -12,7 +12,7 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico">
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/styles/bootstrap/5.3.3/bootstrap.min.css">
   <!-- Fonts -->
   <link rel="stylesheet" href="assets/styles/fontawesome/all.min.css">
   <link rel="stylesheet" href="assets/styles/fontawesome/v4-shims.min.css">
@@ -25,11 +25,11 @@
   <!-- Animate.css -->
   <link rel="stylesheet" href="assets/styles/animate.css">
 
-  <link rel="stylesheet" href="assets/styles/main.css">
+  <link rel="stylesheet" href="assets/styles/main.bs5.css">
 
 
 
-  <link rel="stylesheet" href="assets/styles/responsive.css">
+  <link rel="stylesheet" href="assets/styles/responsive.bs5.css">
 
   <!-- Specific to this site - Last to run -->
   <link rel="stylesheet" href="assets/styles/blackcoin.css">
@@ -205,7 +205,7 @@
   </style>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar">
+<body id="page-top" data-bs-spy="scroll" data-bs-target=".navbar">
 
   <!-- ========== Preloader ========== -->
 
@@ -215,21 +215,14 @@
 
   <!-- ========== Navigation ========== -->
 
-  <nav class="navbar navbar-default navbar-fixed-top mega navbar-inverse navbar-trans">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top mega navbar-trans">
     <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-          aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-        <!-- Logo -->
-        <a class="navbar-brand" href="../"><img src="assets/images/logo-light.png" alt="Blackcoin logo"></a>
-      </div><!-- / .navbar-header -->
-
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <span class="visually-hidden">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="../"><img src="assets/images/logo-light.png" alt="Blackcoin logo"></a>
+      
       <!-- Navbar Links -->
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
@@ -242,7 +235,7 @@
 
           <!-- Discover -->
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"
               role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ddb77a;">Discover
               </span><span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -279,12 +272,12 @@
 
 
         <!-- Navbar Links Right -->
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav ms-auto">
 
 
           <!-- Links -->
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"
               role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ddb77a;">Links </span><span
                 class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -302,8 +295,8 @@
           <!-- News -->
 
           <li class="dropdown mega-fw">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-              role="button" aria-haspopup="true" aria-expanded="false"><span class="label label-red">News </span><span
+            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"
+              role="button" aria-haspopup="true" aria-expanded="false"><span class="badge bg-danger">News </span><span
                 class="caret"></span></a>
             <ul class="dropdown-menu">
               <div class="row" style="margin: 0; padding: 15px 0;">
@@ -334,7 +327,7 @@
               </div>
             </ul>
           </li><!-- / News -->
-        </ul><!-- / .nav .navbar-nav .navbar-right -->
+        </ul><!-- / .nav .navbar-nav .ms-auto -->
       </div>
       <!--/.navbar-collapse -->
     </div><!-- / .container -->
@@ -482,7 +475,7 @@
 
       <!-- Center Image -->
       <div class="col-lg-4">
-        <img src="assets/images/blkb.png" alt=" " class="img-responsive center-block wow fadeInUp"
+        <img src="assets/images/blkb.png" alt=" " class="img-fluid mx-auto d-block wow fadeInUp"
           data-wow-duration="1s" data-wow-delay=".1s">
       </div>
 
@@ -739,7 +732,7 @@
         </div>
 
         <div class="col-md-6">
-          <small><a href="#page-top" class="pull-right to-the-top">To the top<i class="fa fa-angle-up"></i></a></small>
+          <small><a href="#page-top" class="float-end to-the-top">To the top<i class="fa fa-angle-up"></i></a></small>
         </div>
 
       </div><!-- / .row -->
@@ -750,7 +743,7 @@
 
   <script src="assets/js/jquery-3.7.1.min.js"></script>
   <script src="assets/js/jquery-migrate-3.4.1.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/styles/bootstrap/5.3.3/bootstrap.bundle.min.js"></script>
 
   <script src="assets/js/jquery.parallax.js"></script>
   <script src="assets/js/slick.min.js"></script>

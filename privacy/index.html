@@ -12,7 +12,7 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="../favicon.ico">
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="../assets/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/styles/bootstrap/5.3.3/bootstrap.min.css">
   <!-- Fonts -->
   <link rel="stylesheet" href="../assets/styles/fontawesome/all.min.css">
   <link rel="stylesheet" href="../assets/styles/fontawesome/v4-shims.min.css">
@@ -23,8 +23,8 @@
 
 
   <!-- Definity CSS -->
-  <link rel="stylesheet" href="../assets/styles/main.css">
-  <link rel="stylesheet" href="../assets/styles/responsive.css">
+  <link rel="stylesheet" href="../assets/styles/main.bs5.css">
+  <link rel="stylesheet" href="../assets/styles/responsive.bs5.css">
 
   <!-- Specific to this site - Last to run -->
   <link rel="stylesheet" href="../assets/styles/blackcoin.css">
@@ -58,15 +58,13 @@
 
   <!-- ========== Navigation ========== -->
 
-  <nav class="navbar navbar-default navbar-fixed-top mega navbar-inverse navbar-trans" role="navigation">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top mega navbar-trans" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" href="#navbar"
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" href="#navbar"
           aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+          <span class="visually-hidden">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Logo -->
@@ -85,7 +83,7 @@
 
           <!-- Discover -->
           <li class="dropdown">
-            <a href="/#" class="dropdown-toggle" data-toggle="dropdown"
+            <a href="/#" class="dropdown-toggle" data-bs-toggle="dropdown"
               role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ddb77a;">Discover
               </span><span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -122,12 +120,12 @@
 
 
         <!-- Navbar Links Right -->
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav ms-auto">
 
 
           <!-- Links -->
           <li class="dropdown">
-            <a href="/#" class="dropdown-toggle" data-toggle="dropdown"
+            <a href="/#" class="dropdown-toggle" data-bs-toggle="dropdown"
               role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ddb77a;">Links </span><span
                 class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -145,8 +143,8 @@
           <!-- News -->
 
           <li class="dropdown mega-fw">
-            <a href="/#" class="dropdown-toggle" data-toggle="dropdown"
-              role="button" aria-haspopup="true" aria-expanded="false"><span class="label label-red">News </span><span
+            <a href="/#" class="dropdown-toggle" data-bs-toggle="dropdown"
+              role="button" aria-haspopup="true" aria-expanded="false"><span class="badge bg-danger">News </span><span
                 class="caret"></span></a>
             <ul class="dropdown-menu">
               <div class="row" style="margin: 0; padding: 15px 0;">
@@ -177,7 +175,7 @@
               </div>
             </ul>
           </li><!-- / News -->
-        </ul><!-- / .nav .navbar-nav .navbar-right -->
+        </ul><!-- / .nav .navbar-nav .ms-auto -->
       </div>
       <!--/.navbar-collapse -->
     </div><!-- / .container -->
@@ -206,39 +204,33 @@
         </div>
 
         <!-- Privacy Accordion -->
-        <div class="panel-group accordions-1 ws-s" id="privacy-accordion-1" role="tablist" aria-multiselectable="true">
+        <div class="accordion accordions-1 ws-s" id="privacy-accordion-1">
 
           <!-- Item 1 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="privacy-1-h-1">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#privacy-accordion-1"
-                  href="#privacy-1-collapse-1" aria-expanded="false" aria-controls="privacy-1-collapse-1">
-                  DO WE COLLECT YOUR DATA?
-                </span>
-              </h4>
-            </div>
-            <div id="privacy-1-collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="privacy-1-h-1">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="privacy-1-h-1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-1-collapse-1" data-bs-parent="#privacy-accordion-1">
+                DO WE COLLECT YOUR DATA?
+              </button>
+            </h2>
+            <div id="privacy-1-collapse-1" class="accordion-collapse collapse">
+              <div class="accordion-body">
                 <span style="color: #c19959;">No.</span> This website does not use cookies, tracking scripts, analytics services, or any data collection mechanisms that we control. <p></p>
                 We do not collect, store, process, or sell any personal data. We do not require accounts, logins, or any personally identifiable information. <p></p>
                 All website assets (JavaScript libraries, CSS frameworks, fonts, images) are <span style="color: #c19959;">self-hosted</span> and served from our own domain. We do not load any scripts, fonts, or trackers from external CDNs or third-party servers (with the exception of the CoinGecko widget, documented below).
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 2 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="privacy-1-h-2">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#privacy-accordion-1"
-                  href="#privacy-1-collapse-2" aria-expanded="false" aria-controls="privacy-1-collapse-2">
-                  WHAT SERVICES DOES THIS SITE USE?
-                </span>
-              </h4>
-            </div>
-            <div id="privacy-1-collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="privacy-1-h-2">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="privacy-1-h-2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-1-collapse-2" data-bs-parent="#privacy-accordion-1">
+                WHAT SERVICES DOES THIS SITE USE?
+              </button>
+            </h2>
+            <div id="privacy-1-collapse-2" class="accordion-collapse collapse">
+              <div class="accordion-body">
                 This website is hosted on <span style="color: #c19959;">GitHub Pages</span> and uses the following external services:
                 <p></p>
                 <ul style="padding-left: 20px; margin-top: 10px;">
@@ -252,20 +244,17 @@
                 <span style="color: #c19959;">External links:</span> This website contains links to external sites (blockchain explorers, exchanges, social media, wallets). These are regular links that users choose to click. No data is sent to these sites until you click them. Each has its own privacy policy.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 3 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="privacy-1-h-3">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#privacy-accordion-1"
-                  href="#privacy-1-collapse-3" aria-expanded="false" aria-controls="privacy-1-collapse-3">
-                  WHY DO I SEE CLOUDFLARE IN MY BROWSER?
-                </span>
-              </h4>
-            </div>
-            <div id="privacy-1-collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="privacy-1-h-3">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="privacy-1-h-3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-1-collapse-3" data-bs-parent="#privacy-accordion-1">
+                WHY DO I SEE CLOUDFLARE IN MY BROWSER?
+              </button>
+            </h2>
+            <div id="privacy-1-collapse-3" class="accordion-collapse collapse">
+              <div class="accordion-body">
                 This domain (blackcoin.org) uses <span style="color: #c19959;">Cloudflare as its DNS provider</span>. Cloudflare sits between the website and visitors, providing:
                 <p></p>
                 <ul style="padding-left: 20px; margin-top: 10px;">
@@ -279,20 +268,17 @@
                 If you block Cloudflare's beacon.min.js script in your browser, the website will continue to function normally. The site itself does not require Cloudflare to work - it only needs DNS to resolve.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 4 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="privacy-1-h-4">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#privacy-accordion-1"
-                  href="#privacy-1-collapse-4" aria-expanded="false" aria-controls="privacy-1-collapse-4">
-                  WHAT ABOUT OTHER WEBSITES?
-                </span>
-              </h4>
-            </div>
-            <div id="privacy-1-collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="privacy-1-h-4">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="privacy-1-h-4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-1-collapse-4" data-bs-parent="#privacy-accordion-1">
+                WHAT ABOUT OTHER WEBSITES?
+              </button>
+            </h2>
+            <div id="privacy-1-collapse-4" class="accordion-collapse collapse">
+              <div class="accordion-body">
                 This privacy policy applies <span style="color: #c19959;">only to blackcoin.org and blackcoin.dev</span>. Other websites related to Blackcoin (such as blackcoin.nl, blackcoinmore.org, exchanges, social media) have their own privacy policies and data practices. <p></p>
                 The official Blackcoin websites are:
                 <ul style="padding-left: 20px; margin-top: 10px;">
@@ -305,9 +291,9 @@
                 We are not responsible for the privacy practices of any other website.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
-        </div><!-- / .panel-group .accordion-1 -->
+        </div><!-- / .accordion -->
 
         <hr class="mb-sm-50">
       </div><!-- / .col-md-6 -->
@@ -321,20 +307,17 @@
         </div>
 
         <!-- Privacy Accordion -->
-        <div class="panel-group ws-s accordions-1" id="privacy-accordion-2" role="tablist" aria-multiselectable="true">
+        <div class="accordion ws-s accordions-1" id="privacy-accordion-2">
 
           <!-- Item 1 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="privacy-2-h-1">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#privacy-accordion-2"
-                  href="#privacy-2-collapse-1" aria-expanded="false" aria-controls="privacy-2-collapse-1">
-                  CLOUDFLARE
-                </span>
-              </h4>
-            </div>
-            <div id="privacy-2-collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="privacy-2-h-1">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="privacy-2-h-1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-2-collapse-1" data-bs-parent="#privacy-accordion-2">
+                CLOUDFLARE
+              </button>
+            </h2>
+            <div id="privacy-2-collapse-1" class="accordion-collapse collapse">
+              <div class="accordion-body">
                 <strong>What it does:</strong> Cloudflare provides DNS (Domain Name System) resolution and acts as a proxy between visitors and GitHub Pages where this site is hosted. <p></p>
                 <strong>Data collected:</strong> Cloudflare may collect <span style="color: #c19959;">IP addresses, browser information, request logs, and analytics data</span>. They may also inject scripts (like beacon.min.js) for analytics. <p></p>
                 <strong>Our control:</strong> <span style="color: #c19959;">None</span>. The domain uses Cloudflare nameservers, but we do not have access to the Cloudflare account controlling them. <p></p>
@@ -342,20 +325,17 @@
                 <strong>How to opt-out:</strong> Use browser extensions that block Cloudflare scripts, or use privacy-focused DNS resolvers.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 2 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="privacy-2-h-2">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#privacy-accordion-2"
-                  href="#privacy-2-collapse-2" aria-expanded="false" aria-controls="privacy-2-collapse-2">
-                  COINGECKO WIDGET
-                </span>
-              </h4>
-            </div>
-            <div id="privacy-2-collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="privacy-2-h-2">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="privacy-2-h-2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-2-collapse-2" data-bs-parent="#privacy-accordion-2">
+                COINGECKO WIDGET
+              </button>
+            </h2>
+            <div id="privacy-2-collapse-2" class="accordion-collapse collapse">
+              <div class="accordion-body">
                 <strong>What it does:</strong> Displays live cryptocurrency price data for Blackcoin (BLK) in the navigation menu. <p></p>
                 <strong>Data collected:</strong> CoinGecko may collect <span style="color: #c19959;">IP addresses and usage statistics</span> for the widget. No personally identifiable information is required to view the price data. <p></p>
                 <strong>Our control:</strong> We chose to include this widget. It loads from widgets.coingecko.com. <p></p>
@@ -363,20 +343,17 @@
                 <strong>How to opt-out:</strong> Block widgets.coingecko.com in your browser or use a script blocker.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 3 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="privacy-2-h-3">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#privacy-accordion-2"
-                  href="#privacy-2-collapse-3" aria-expanded="false" aria-controls="privacy-2-collapse-3">
-                  GITHUB PAGES
-                </span>
-              </h4>
-            </div>
-            <div id="privacy-2-collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="privacy-2-h-3">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="privacy-2-h-3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-2-collapse-3" data-bs-parent="#privacy-accordion-2">
+                GITHUB PAGES
+              </button>
+            </h2>
+            <div id="privacy-2-collapse-3" class="accordion-collapse collapse">
+              <div class="accordion-body">
                 <strong>What it does:</strong> Hosts the website files and serves them to visitors through GitHub's global CDN. <p></p>
                 <strong>Data collected:</strong> GitHub Pages may log <span style="color: #c19959;">IP addresses, request data, and browser user agents</span> for technical purposes. These logs are typically not persistent. <p></p>
                 <strong>Our control:</strong> We host the site on GitHub Pages and can modify the content at any time. <p></p>
@@ -384,40 +361,34 @@
                 <strong>Note:</strong> GitHub Pages does not inject tracking scripts into your website.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 4 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="privacy-2-h-4">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#privacy-accordion-2"
-                  href="#privacy-2-collapse-4" aria-expanded="false" aria-controls="privacy-2-collapse-4">
-                  GITHUB (SOURCE CODE)
-                </span>
-              </h4>
-            </div>
-            <div id="privacy-2-collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="privacy-2-h-4">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="privacy-2-h-4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-2-collapse-4" data-bs-parent="#privacy-accordion-2">
+                GITHUB (SOURCE CODE)
+              </button>
+            </h2>
+            <div id="privacy-2-collapse-4" class="accordion-collapse collapse">
+              <div class="accordion-body">
                 <strong>What it does:</strong> The source code for this website is publicly available on GitHub. Anyone can view, fork, or contribute to the codebase. <p></p>
                 <strong>Repository:</strong> <a href="https://github.com/CoinBlack/" target="_blank" rel="noopener">github.com/CoinBlack</a> <p></p>
                 <strong>Data collected:</strong> GitHub may collect data about who visits the repository (logged-in users). The website code itself does not contain any tracking code. <p></p>
                 <strong>Transparency:</strong> All website code is <span style="color: #c19959;">open source</span> and can be audited by anyone. We removed Google Tag Manager, Twitter widgets, and other tracking scripts in March 2026.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 5 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="privacy-2-h-5">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#privacy-accordion-2"
-                  href="#privacy-2-collapse-5" aria-expanded="false" aria-controls="privacy-2-collapse-5">
-                  EXTERNAL LINKS
-                </span>
-              </h4>
-            </div>
-            <div id="privacy-2-collapse-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="privacy-2-h-5">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="privacy-2-h-5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-2-collapse-5" data-bs-parent="#privacy-accordion-2">
+                EXTERNAL LINKS
+              </button>
+            </h2>
+            <div id="privacy-2-collapse-5" class="accordion-collapse collapse">
+              <div class="accordion-body">
                 This website contains links to external sites:
                 <ul style="padding-left: 20px; margin-top: 10px;">
                   <li>Cryptocurrency exchanges (XeggeX, FreiXlite, etc.)</li>
@@ -429,29 +400,26 @@
                 <span style="color: #c19959;">We are not responsible for the privacy practices of these external sites.</span> Each has its own privacy policy. We recommend reviewing their policies before providing any personal information.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 6 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="privacy-2-h-6">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#privacy-accordion-2"
-                  href="#privacy-2-collapse-6" aria-expanded="false" aria-controls="privacy-2-collapse-6">
-                  WALLET DOWNLOADS
-                </span>
-              </h4>
-            </div>
-            <div id="privacy-2-collapse-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="privacy-2-h-6">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="privacy-2-h-6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-2-collapse-6" data-bs-parent="#privacy-accordion-2">
+                WALLET DOWNLOADS
+              </button>
+            </h2>
+            <div id="privacy-2-collapse-6" class="accordion-collapse collapse">
+              <div class="accordion-body">
                 Wallet downloads are hosted directly on this website and GitHub. <p></p>
                 <strong>What we host:</strong> Wallet executables (.zip files) and documentation (.pdf files) in the assets/ directory. <p></p>
                 <strong>Data collected:</strong> <span style="color: #c19959;">None.</span> Downloads are served directly from GitHub Pages without any tracking or analytics. <p></p>
                 <strong>Security:</strong> We recommend verifying checksums and downloading only from official sources. The only official Blackcoin websites are listed in our FAQ.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
-        </div><!-- / .panel-group .accordion-1 -->
+        </div><!-- / .accordion -->
 
         <hr>
       </div><!-- / .col-md-6 -->
@@ -495,7 +463,7 @@
           </div>
 
           <div class="col-sm-6">
-            <small><a href="../#page-top" class="pull-right to-the-top">To the top<i
+            <small><a href="../#page-top" class="float-end to-the-top">To the top<i
                   class="fa fa-angle-up"></i></a></small>
           </div>
 
@@ -511,7 +479,7 @@
   <script src="../assets/js/jquery-migrate-3.4.1.min.js"></script>
 
 
-  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/styles/bootstrap/5.3.3/bootstrap.bundle.min.js"></script>
 
 
   <!-- Definity JS -->

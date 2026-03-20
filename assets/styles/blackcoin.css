@@ -141,3 +141,54 @@
 .navbar-inverse .dropdown-menu {
   background-color: rgba(0, 0, 0, 0.95) !important;
 }
+
+/* ==========================================================================
+   Bootstrap 3 Typography Restoration (Fixes BS5 16px/1rem Jump)
+   ========================================================================== */
+body {
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  color: #333;
+}
+
+p {
+  margin: 0 0 10px !important;
+}
+
+/* Restore BS3 Heading Scales */
+h1, .h1 { font-size: 36px !important; margin-top: 20px !important; margin-bottom: 10px !important; }
+h2, .h2 { font-size: 30px !important; margin-top: 20px !important; margin-bottom: 10px !important; }
+h3, .h3 { font-size: 24px !important; margin-top: 20px !important; margin-bottom: 10px !important; }
+h4, .h4 { font-size: 18px !important; margin-top: 10px !important; margin-bottom: 10px !important; }
+h5, .h5 { font-size: 14px !important; margin-top: 10px !important; margin-bottom: 10px !important; }
+h6, .h6 { font-size: 12px !important; margin-top: 10px !important; margin-bottom: 10px !important; }
+
+/* Navbar Font Size */
+.navbar-nav {
+  font-size: 14px !important;
+}
+
+/* Small text restoration */
+small, .small {
+  font-size: 85% !important;
+}
+
+/* Button & Dropdown Font Size Restoration */
+.btn {
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+}
+
+.dropdown-menu {
+  font-size: 14px !important;
+}
+
+.dropdown-item {
+  font-size: 14px !important;
+  padding: 3px 20px !important;
+}
+
+/* Navbar Brand Restoration */
+.navbar-brand {
+  font-size: 18px !important;
+}

@@ -12,7 +12,7 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="../favicon.ico">
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="../assets/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/styles/bootstrap/5.3.3/bootstrap.min.css">
   <!-- Fonts -->
   <link rel="stylesheet" href="../assets/styles/fontawesome/all.min.css">
   <link rel="stylesheet" href="../assets/styles/fontawesome/v4-shims.min.css">
@@ -23,8 +23,8 @@
 
 
   <!-- Definity CSS -->
-  <link rel="stylesheet" href="../assets/styles/main.css">
-  <link rel="stylesheet" href="../assets/styles/responsive.css">
+  <link rel="stylesheet" href="../assets/styles/main.bs5.css">
+  <link rel="stylesheet" href="../assets/styles/responsive.bs5.css">
 
   <!-- Specific to this site - Last to run -->
   <link rel="stylesheet" href="../assets/styles/blackcoin.css">
@@ -58,15 +58,13 @@
 
   <!-- ========== Navigation ========== -->
 
-  <nav class="navbar navbar-default navbar-fixed-top mega navbar-inverse navbar-trans" role="navigation">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top mega navbar-trans" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" href="#navbar"
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" href="#navbar"
           aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+          <span class="visually-hidden">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Logo -->
@@ -85,7 +83,7 @@
 
           <!-- Discover -->
           <li class="dropdown">
-            <a href="/#" class="dropdown-toggle" data-toggle="dropdown"
+            <a href="/#" class="dropdown-toggle" data-bs-toggle="dropdown"
               role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ddb77a;">Discover
               </span><span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -121,12 +119,12 @@
 
 
         <!-- Navbar Links Right -->
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav ms-auto">
 
 
           <!-- Links -->
           <li class="dropdown">
-            <a href="../#" class="dropdown-toggle" data-toggle="dropdown"
+            <a href="../#" class="dropdown-toggle" data-bs-toggle="dropdown"
               role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ddb77a;">Links </span><span
                 class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -144,8 +142,8 @@
           <!-- News -->
 
           <li class="dropdown mega-fw">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-              role="button" aria-haspopup="true" aria-expanded="false"><span class="label label-red">News </span><span
+            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"
+              role="button" aria-haspopup="true" aria-expanded="false"><span class="badge bg-danger">News </span><span
                 class="caret"></span></a>
             <ul class="dropdown-menu">
               <div class="row" style="margin: 0; padding: 15px 0;">
@@ -176,7 +174,7 @@
               </div>
             </ul>
           </li><!-- / News -->
-        </ul><!-- / .nav .navbar-nav .navbar-right -->
+        </ul><!-- / .nav .navbar-nav .ms-auto -->
       </div>
       <!--/.navbar-collapse -->
     </div><!-- / .container -->
@@ -207,20 +205,17 @@
         </div>
 
         <!-- FAQ Accordion -->
-        <div class="panel-group accordions-1 ws-s" id="faq-accordion-1" role="tablist" aria-multiselectable="true">
+        <div class="accordion accordions-1 ws-s" id="faq-accordion-1">
 
           <!-- Item 1 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-1-h-1">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-1"
-                  href="#faq-1-collapse-1" aria-expanded="false" aria-controls="faq-1-collapse-1">
-                  MORE ABOUT BLACKCOIN
-                </span>
-              </h4>
-            </div>
-            <div id="faq-1-collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-1-h-1">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-1-h-1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1-collapse-1">
+                MORE ABOUT BLACKCOIN
+              </button>
+            </h2>
+            <div id="faq-1-collapse-1" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-1">
+              <div class="accordion-body">
                 Think of it like a <span style="color: #c19959;">peoples bank</span>. Your <span
                   style="color: #c19959;">accounts cant be frozen</span>, it is completely and <span
                   style="color: #c19959;">always free</span>, it is <span style="color: #c19959;">anonymous</span>, much
@@ -247,20 +242,17 @@
                   actions instead of words.</p>
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 2 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-1-h-2">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-1"
-                  href="#faq-1-collapse-2" aria-expanded="false" aria-controls="faq-1-collapse-2">
-                  HOW DOES IT WORK?
-                </span>
-              </h4>
-            </div>
-            <div id="faq-1-collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-1-h-2">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-1-h-2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1-collapse-2">
+                HOW DOES IT WORK?
+              </button>
+            </h2>
+            <div id="faq-1-collapse-2" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-1">
+              <div class="accordion-body">
                 Did you know that in the United States that cryptocurrency is considered a commodity? So this means you
                 get incredible tax breaks! Also many countries do not even tax it. Many people think smart contracts are
                 the future! This is like the dawn of the internet.<br />
@@ -293,20 +285,17 @@
                     style="color: #c19959;">FREE.</span>
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 3 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-1-h-3">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-1"
-                  href="#faq-1-collapse-3" aria-expanded="false" aria-controls="faq-1-collapse-3">
-                  BLACKCOIN VS BITCOIN
-                </span>
-              </h4>
-            </div>
-            <div id="faq-1-collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-1-h-3">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-1-h-3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1-collapse-3">
+                BLACKCOIN VS BITCOIN
+              </button>
+            </h2>
+            <div id="faq-1-collapse-3" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-1">
+              <div class="accordion-body">
                 So <span style="color: #c19959;">what makes Blackcoin so different from Bitcoin?</span>
                 <p>
                 <p>We love Bitcoin however we also seek to improve on it. <span style="color: #c19959;">Because
@@ -318,7 +307,7 @@
                   The coin itself <span style="color: #c19959;">has been forked from Github more than any other coin
                     in the world!</span> It was started by Rat4 who worked on mostly POS (Proof of Stake) innovations.
                   Rat4 wanted to prove that staking could be <span style="color: #c19959;">secure and more efficient
-                    than Bitcoins old fashioned and expensive Proof of Work</span>.
+                    than BitCoins old fashioned and expensive Proof of Work</span>.
                 </p>
                 <p>Several members of the community combined the fast POS with a mining pool to help support the
                   market price and volume by applying upward pressure and this resulted in a huge rise in Blackcoin
@@ -347,20 +336,17 @@
                     style="color: #c19959;">the future of the internet</span>.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 4 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-1-h-4">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-1"
-                  href="#faq-1-collapse-4" aria-expanded="false" aria-controls="faq-1-collapse-4">
-                  PROOF OF STAKE VS PROOF OF WORK
-                </span>
-              </h4>
-            </div>
-            <div id="faq-1-collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-1-h-4">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-1-h-4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1-collapse-4">
+                PROOF OF STAKE VS PROOF OF WORK
+              </button>
+            </h2>
+            <div id="faq-1-collapse-4" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-1">
+              <div class="accordion-body">
                 Proof-of-Work was a fantastic innovation that formed the backbone of the original Bitcoin protocol. The
                 idea is that by solving a computationally intensive math problem, one can prove the effort they've done
                 to secure the protocol. This is how a blockchain is generated, and the effort that is required to
@@ -380,20 +366,17 @@
                 and general functionality (PoS 2.0 and PoS 3.0).
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 5 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-1-h-5">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-1"
-                  href="#faq-1-collapse-5" aria-expanded="false" aria-controls="faq-1-collapse-5">
-                  THE ANNUAL INFLATION OF BLACKCOIN
-                </span>
-              </h4>
-            </div>
-            <div id="faq-1-collapse-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-1-h-5">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-1-h-5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1-collapse-5">
+                THE ANNUAL INFLATION OF BLACKCOIN
+              </button>
+            </h2>
+            <div id="faq-1-collapse-5" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-1">
+              <div class="accordion-body">
                 It is a fixed amount of BLK due to <span style="color: #c19959;">static block reward</span>, and a
                 slightly less inflation rate year on year because of that. <br />
                 <p></p>
@@ -410,39 +393,33 @@
                 continually staking, since 80% of people (avg) weren't staking and get nothing.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 6 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-1-h-6">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-1"
-                  href="#faq-1-collapse-6" aria-expanded="false" aria-controls="faq-1-collapse-6">
-                  WHERE CAN I CHECK THE NETWORK WEIGHT?
-                </span>
-              </h4>
-            </div>
-            <div id="faq-1-collapse-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-1-h-6">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-1-h-6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1-collapse-6">
+                WHERE CAN I CHECK THE NETWORK WEIGHT?
+              </button>
+            </h2>
+            <div id="faq-1-collapse-6" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-1">
+              <div class="accordion-body">
                 You can check the network weight on the <span style="color: #c19959;">bottom right of your
                   wallet</span>.<br /> or by running the getstakinginfo command from the debug console.
                 Network weight is computed from the last 72 blocks.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 7 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-1-h-7">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-1"
-                  href="#faq-1-collapse-7" aria-expanded="false" aria-controls="faq-1-collapse-7">
-                  WHERE CAN I BUY BLACKCOIN?
-                </span>
-              </h4>
-            </div>
-            <div id="faq-1-collapse-7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-1-h-7">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-1-h-7">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1-collapse-7">
+                WHERE CAN I BUY BLACKCOIN?
+              </button>
+            </h2>
+            <div id="faq-1-collapse-7" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-1">
+              <div class="accordion-body">
                 You can purchase blackcoins on different <span style="color: #c19959;">online exchanges</span>.<br />
                 <p></p>
                 You could find exchanges with the biggest volumes at <a
@@ -450,20 +427,17 @@
                   target="_blank">Coinmarketcap.com/Markets</a>
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 8 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-1-h-8">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-1"
-                  href="#faq-1-collapse-8" aria-expanded="false" aria-controls="faq-1-collapse-8">
-                  STAKING
-                </span>
-              </h4>
-            </div>
-            <div id="faq-1-collapse-8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-1-h-8">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-1-h-8">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1-collapse-8">
+                STAKING
+              </button>
+            </h2>
+            <div id="faq-1-collapse-8" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-1">
+              <div class="accordion-body">
                 Blackcoin is a pure PoS (Proof-of-Stake) coin and can no longer be mined in the usual way. However, you
                 can still mine by what is called <span style="color: #c19959;">Staking</span>. This also serves to <span
                   style="color: #c19959;">secure the network</span> and aid in the various transactions made for all
@@ -475,56 +449,47 @@
                 <span style="color: #c19959;">The more coins you have, the more coins you will earn by Staking.</span>
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 9 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-1-h-9">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-1"
-                  href="#faq-1-collapse-9" aria-expanded="false" aria-controls="faq-1-collapse-9">
-                  WHAT KIND OF COMPUTING POWER IS REQUIRED FOR STAKING?
-                </span>
-              </h4>
-            </div>
-            <div id="faq-1-collapse-9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-1-h-9">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-1-h-9">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1-collapse-9">
+                WHAT KIND OF COMPUTING POWER IS REQUIRED FOR STAKING?
+              </button>
+            </h2>
+            <div id="faq-1-collapse-9" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-1">
+              <div class="accordion-body">
                 Staking doesn't need to do a lot of work, so the <span style="color: #c19959;">requirements are
                   incredibly small</span>.<br />
                 You would have a hard time to find a computer today that is NOT able to stake.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 10 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-1-h-10">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-1"
-                  href="#faq-1-collapse-10" aria-expanded="false" aria-controls="faq-1-collapse-10">
-                  HOW BIG ARE BLOCK REWARDS?
-                </span>
-              </h4>
-            </div>
-            <div id="faq-1-collapse-10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-1-h-10">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-1-h-10">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1-collapse-10">
+                HOW BIG ARE BLOCK REWARDS?
+              </button>
+            </h2>
+            <div id="faq-1-collapse-10" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-1">
+              <div class="accordion-body">
                 You get <span style="color: #c19959;">1.5 BLK reward + any tx fees in that block</span>.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 11 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-1-h-11">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-1"
-                  href="#faq-1-collapse-11" aria-expanded="false" aria-controls="faq-1-collapse-11">
-                  HOW OFTEN WILL I RECEIVE A BLOCK REWARD?
-                </span>
-              </h4>
-            </div>
-            <div id="faq-1-collapse-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-1-h-11">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-1-h-11">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1-collapse-11">
+                HOW OFTEN WILL I RECEIVE A BLOCK REWARD?
+              </button>
+            </h2>
+            <div id="faq-1-collapse-11" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-1">
+              <div class="accordion-body">
                 With 10000 BLK you can expect to stake around once a day (1.5BLK). <br />
                 <p></p>
                 There's no predicting exactly how many stakes you will get. However, <span style="color: #c19959;">if
@@ -536,20 +501,17 @@
                 estimate.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
           <!-- Item 12 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-1-h-12">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-1"
-                  href="#faq-1-collapse-12" aria-expanded="false" aria-controls="faq-1-collapse-12">
-                  WHAT ARE THE OFFICIAL BLACKCOIN WEBSITES?
-                </span>
-              </h4>
-            </div>
-            <div id="faq-1-collapse-12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-1-h-12">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-1-h-12">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1-collapse-12">
+                WHAT ARE THE OFFICIAL BLACKCOIN WEBSITES?
+              </button>
+            </h2>
+            <div id="faq-1-collapse-12" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-1">
+              <div class="accordion-body">
                 <a href="https://blackcoin.org/" target="_blank">https://blackcoin.org</a> - <a
                   href="https://blackcoinmore.org/" target="_blank">https://blackcoinmore.org</a> - <a
                   href="https://blackcoin.nl/" target="_blank">https://blackcoin.nl</a> are <span
@@ -558,9 +520,9 @@
                 DO NOT DOWNLOAD FROM OR SIGN UP TO ANY OTHER BLACKCOIN LOOK WEBSITE!
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div><!-- / .accordion-item -->
 
-        </div><!-- / .panel-group .accordion-1 -->
+        </div><!-- / .accordion -->
 
         <hr class="mb-sm-50">
       </div><!-- / .col-md-6 -->
@@ -574,38 +536,32 @@
         </div>
 
         <!-- FAQ Accordion -->
-        <div class="panel-group ws-s accordions-1" id="faq-accordion-2" role="tablist" aria-multiselectable="true">
+        <div class="accordion ws-s accordions-1" id="faq-accordion-2">
 
           <!-- Item 1 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-2-h-1">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-2"
-                  href="#faq-2-collapse-1" aria-expanded="false" aria-controls="faq-2-collapse-1">
-                  HOW LONG DOES THE WALLET TAKE TO SYNC?
-                </span>
-              </h4>
-            </div>
-            <div id="faq-2-collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-2-h-1">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-2-h-1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2-collapse-1">
+                HOW LONG DOES THE WALLET TAKE TO SYNC?
+              </button>
+            </h2>
+            <div id="faq-2-collapse-1" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-2">
+              <div class="accordion-body">
                 The current bootstrap is around 10.0 GB. It can take a long time to download (<span
                   style="color: #c19959;">depending on your internet speed and available peers</span>). <p></p>
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div>
 
           <!-- Item 2 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-2-h-2">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-2"
-                  href="#faq-2-collapse-2" aria-expanded="false" aria-controls="faq-2-collapse-2">
-                  WHY IS WALLET NOT SYNCING?
-                </span>
-              </h4>
-            </div>
-            <div id="faq-2-collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-2-h-2">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-2-h-2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2-collapse-2">
+                WHY IS WALLET NOT SYNCING?
+              </button>
+            </h2>
+            <div id="faq-2-collapse-2" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-2">
+              <div class="accordion-body">
                 1. Make sure you have the <span style="color: #c19959;">latest wallet version</span>.<br />
                 <p></p>
                 2. Make sure your <span style="color: #c19959;">Firewall or Anti Virus software do not block wallet
@@ -637,20 +593,17 @@
                 WHATEVER YOU DO, <span style="color: #c19959;">BACKUP YOUR WALLET.DAT!</span>
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div>
 
           <!-- Item 3 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-2-h-3">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-2"
-                  href="#faq-2-collapse-3" aria-expanded="false" aria-controls="faq-2-collapse-3">
-                  HOW TO SEND BLACKCOIN?
-                </span>
-              </h4>
-            </div>
-            <div id="faq-2-collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-2-h-3">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-2-h-3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2-collapse-3">
+                HOW TO SEND BLACKCOIN?
+              </button>
+            </h2>
+            <div id="faq-2-collapse-3" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-2">
+              <div class="accordion-body">
                 To send coins is very straight forward. <br />
                 If you are sending these coins to a friend, exchange or business, then all you will need is their <span
                   style="color: #c19959;">Receive address</span> (known as a deposit address on exchanges).<br />
@@ -673,20 +626,17 @@
                 This will hopefully prevent you from entering an incorrect address.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div>
 
           <!-- Item 4 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-2-h-4">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-2"
-                  href="#faq-2-collapse-4" aria-expanded="false" aria-controls="faq-2-collapse-4">
-                  HOW TO RECEIVE BLACKCOINS?
-                </span>
-              </h4>
-            </div>
-            <div id="faq-2-collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-2-h-4">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-2-h-4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2-collapse-4">
+                HOW TO RECEIVE BLACKCOINS?
+              </button>
+            </h2>
+            <div id="faq-2-collapse-4" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-2">
+              <div class="accordion-body">
                 Like sending coins, receiving them is just as simple. <br />
                 If you have just bought some blackcoins from an exchange, or are being paid in BLK then you will need to
                 have a Receive Address so that the coins can be sent straight to your wallet.
@@ -703,152 +653,128 @@
                 time.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div>
 
           <!-- Item 5 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-2-h-5">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-2"
-                  href="#faq-2-collapse-5" aria-expanded="false" aria-controls="faq-2-collapse-5">
-                  HOW TO OPEN YOUR WALLET FOR STAKING?
-                </span>
-              </h4>
-            </div>
-            <div id="faq-2-collapse-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-2-h-5">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-2-h-5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2-collapse-5">
+                HOW TO OPEN YOUR WALLET FOR STAKING?
+              </button>
+            </h2>
+            <div id="faq-2-collapse-5" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-2">
+              <div class="accordion-body">
                 Wallet Settings > <span style="color: #c19959;">Unlock Wallet</span>
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div>
 
           <!-- Item 6 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-2-h-6">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-2"
-                  href="#faq-2-collapse-6" aria-expanded="false" aria-controls="faq-2-collapse-6">
-                  WHAT IS THE MAX AMOUNT OF NETWORK CONNECTIONS?
-                </span>
-              </h4>
-            </div>
-            <div id="faq-2-collapse-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-2-h-6">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-2-h-6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2-collapse-6">
+                WHAT IS THE MAX AMOUNT OF NETWORK CONNECTIONS?
+              </button>
+            </h2>
+            <div id="faq-2-collapse-6" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-2">
+              <div class="accordion-body">
                 The outbound connection is cap at <span style="color: #c19959;">16 max</span>.<br />
                 If you want more connections, you need to accept inbound connections. <br />
                 The wallet listen on port 15714. Just check if that port is not blocked. Also, It takes time for other
                 peers to discover your nodes and connect to it.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div>
 
           <!-- Item 7 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-2-h-7">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-2"
-                  href="#faq-2-collapse-7" aria-expanded="false" aria-controls="faq-2-collapse-7">
-                  UPGRADING WALLET
-                </span>
-              </h4>
-            </div>
-            <div id="faq-2-collapse-7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-2-h-7">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-2-h-7">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2-collapse-7">
+                UPGRADING WALLET
+              </button>
+            </h2>
+            <div id="faq-2-collapse-7" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-2">
+              <div class="accordion-body">
                 Just <span style="color: #c19959;">replace the old binary with the new one</span>. <br />
                 Before upgrading, make sure that you have the lastest <span style="color: #c19959;">backup of your
                   wallet.dat file</span>.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div>
 
           <!-- Item 8 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-2-h-8">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-2"
-                  href="#faq-2-collapse-8" aria-expanded="false" aria-controls="faq-2-collapse-8">
-                  CHANGING WALLET LOCATION
-                </span>
-              </h4>
-            </div>
-            <div id="faq-2-collapse-8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-2-h-8">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-2-h-8">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2-collapse-8">
+                CHANGING WALLET LOCATION
+              </button>
+            </h2>
+            <div id="faq-2-collapse-8" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-2">
+              <div class="accordion-body">
                 Create a <span style="color: #c19959;">shortcut that runs blackcoin-qt.exe -datadir=NEW LOCATION</span>
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div>
 
           <!-- Item 9 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-2-h-9">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-2"
-                  href="#faq-2-collapse-9" aria-expanded="false" aria-controls="faq-2-collapse-9">
-                  HOW OFTEN DO I NEED TO BACKUP MY WALLET?
-                </span>
-              </h4>
-            </div>
-            <div id="faq-2-collapse-9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-2-h-9">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-2-h-9">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2-collapse-9">
+                HOW OFTEN DO I NEED TO BACKUP MY WALLET?
+              </button>
+            </h2>
+            <div id="faq-2-collapse-9" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-2">
+              <div class="accordion-body">
                 <span style="color: #c19959;">If you send coins from the wallet to other addresses</span>, then you
                 should back it up, since sending can create a new change addresses. <br />
                 If you are not doing anything other than staking and receiving coins to the same address, then you
                 probably don't need to create additional backups.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div>
 
           <!-- Item 10 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-2-h-10">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-2"
-                  href="#faq-2-collapse-10" aria-expanded="false" aria-controls="faq-2-collapse-10">
-                  HOW TO STOP STAKING TO BE ABLE TO SEND COINS?
-                </span>
-              </h4>
-            </div>
-            <div id="faq-2-collapse-10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-2-h-10">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-2-h-10">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2-collapse-10">
+                HOW TO STOP STAKING TO BE ABLE TO SEND COINS?
+              </button>
+            </h2>
+            <div id="faq-2-collapse-10" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-2">
+              <div class="accordion-body">
                 Your balance which is <span style="color: #c19959;">staking will be freed after 501
                   confirmations</span>. <br />
                 You can track progress in the Transactions tab.
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div>
 
           <!-- Item 11 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-2-h-11">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-2"
-                  href="#faq-2-collapse-11" aria-expanded="false" aria-controls="faq-2-collapse-11">
-                  SENDING BLACKCOINS FROM CERTAIN ADDRESS
-                </span>
-              </h4>
-            </div>
-            <div id="faq-2-collapse-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-2-h-11">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-2-h-11">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2-collapse-11">
+                SENDING BLACKCOINS FROM CERTAIN ADDRESS
+              </button>
+            </h2>
+            <div id="faq-2-collapse-11" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-2">
+              <div class="accordion-body">
                 If you <span style="color: #c19959;">generated few addresses in your wallet</span>, but you would like
                 to <span style="color: #c19959;">choose certain one</span> to send blackcoins from: <br />
                 Settings >> options >> display >> "check" display coin control features (experts only) >> apply;<br />
                 Send >> inputs >> "check" the address you would like to send from. <br />
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div>
 
           <!-- Item 12 -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="faq-2-h-12">
-              <h4 class="panel-title">
-                <span class="collapsed" role="button" data-toggle="collapse" data-parent="#faq-accordion-2"
-                  href="#faq-2-collapse-12" aria-expanded="false" aria-controls="faq-2-collapse-12">
-                  DOES A WEB OR MOBILE WALLET EXIST?
-                </span>
-              </h4>
-            </div>
-            <div id="faq-2-collapse-12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-2-h-12">
-              <div class="panel-body">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-2-h-12">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2-collapse-12">
+                DOES A WEB OR MOBILE WALLET EXIST?
+              </button>
+            </h2>
+            <div id="faq-2-collapse-12" class="accordion-collapse collapse" data-bs-parent="#faq-accordion-2">
+              <div class="accordion-body">
                 <p>You can use <a href="https://coinomi.com/">Coinomi.</a></p>
                 <p>Or the following alternatives:</p>
                 <ul>
@@ -857,9 +783,9 @@
                 </ul>
               </div>
             </div>
-          </div><!-- / .panel -->
+          </div>
 
-        </div><!-- / .panel-group .accordion-1 -->
+        </div>
 
         <hr>
       </div><!-- / .col-md-6 -->
@@ -896,7 +822,7 @@
           </div>
 
           <div class="col-sm-6">
-            <small><a href="../#page-top" class="pull-right to-the-top">To the top<i
+            <small><a href="../#page-top" class="float-end to-the-top">To the top<i
                   class="fa fa-angle-up"></i></a></small>
           </div>
 
@@ -912,7 +838,7 @@
   <script src="../assets/js/jquery-migrate-3.4.1.min.js"></script>
 
 
-  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/styles/bootstrap/5.3.3/bootstrap.bundle.min.js"></script>
 
 
   <!-- Definity JS -->

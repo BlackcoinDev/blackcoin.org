@@ -12,7 +12,7 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="../favicon.ico">
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="../assets/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/styles/bootstrap/5.3.3/bootstrap.min.css">
   <!-- Fonts -->
   <link rel="stylesheet" href="../assets/styles/fontawesome/all.min.css">
   <link rel="stylesheet" href="../assets/styles/fontawesome/v4-shims.min.css">
@@ -26,8 +26,8 @@
 
 
   <!-- Definity CSS -->
-  <link rel="stylesheet" href="../assets/styles/main.css">
-  <link rel="stylesheet" href="../assets/styles/responsive.css">
+  <link rel="stylesheet" href="../assets/styles/main.bs5.css">
+  <link rel="stylesheet" href="../assets/styles/responsive.bs5.css">
   
 <!-- Specific to this site - Last to run -->
   <link rel="stylesheet" href="../assets/styles/blackcoin.css">
@@ -61,15 +61,13 @@
 
   <!-- ========== Navigation ========== -->
 
-  <nav class="navbar navbar-default navbar-fixed-top mega navbar-inverse navbar-trans" role="navigation">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top mega navbar-trans" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
           aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+          <span class="visually-hidden">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Logo -->
@@ -88,7 +86,7 @@
 
           <!-- Discover -->
           <li class="dropdown">
-            <a href="/#" class="dropdown-toggle" data-toggle="dropdown"
+            <a href="/#" class="dropdown-toggle" data-bs-toggle="dropdown"
               role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ddb77a;">Discover
               </span><span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -124,12 +122,12 @@
 
 
         <!-- Navbar Links Right -->
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav ms-auto">
 
 
           <!-- Links -->
           <li class="dropdown">
-            <a href="../#" class="dropdown-toggle" data-toggle="dropdown"
+            <a href="../#" class="dropdown-toggle" data-bs-toggle="dropdown"
               role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ddb77a;">Links </span><span
                 class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -147,8 +145,8 @@
           <!-- News -->
 
           <li class="dropdown mega-fw">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-              role="button" aria-haspopup="true" aria-expanded="false"><span class="label label-red">News </span><span
+            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"
+              role="button" aria-haspopup="true" aria-expanded="false"><span class="badge bg-danger">News </span><span
                 class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <div class="row" style="margin: 0; padding: 15px 0;">
@@ -179,7 +177,7 @@
                   </div>
                 </ul>
           </li><!-- / News -->
-        </ul><!-- / .nav .navbar-nav .navbar-right -->
+        </ul><!-- / .nav .navbar-nav .ms-auto -->
       </div>
       <!--/.navbar-collapse -->
     </div><!-- / .container -->
@@ -537,7 +535,7 @@
           </div>
 
           <div class="col-sm-6">
-            <small><a href="../#page-top" class="pull-right to-the-top">To the top<i
+            <small><a href="../#page-top" class="float-end to-the-top">To the top<i
                   class="fa fa-angle-up"></i></a></small>
           </div>
 
@@ -551,7 +549,7 @@
   <!-- JS -->
   <script src="../assets/js/jquery-3.7.1.min.js"></script>
   <script src="../assets/js/jquery-migrate-3.4.1.min.js"></script>
-  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/styles/bootstrap/5.3.3/bootstrap.bundle.min.js"></script>
 
 
   <!-- Definity JS -->
