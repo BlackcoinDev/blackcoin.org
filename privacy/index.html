@@ -176,12 +176,13 @@
 
   <!-- ========== LargeHeader Canvas ========== -->
 
-  <div id="home" class="agency2-hero">
+  <div id="home" class="agency2-hero compact-hero">
     <div class="bg-overlay">
-      <div id="large-header" class="large-header">
+      <div id="large-header" class="large-header compact-hero">
         <canvas id="demo-canvas" class="demo-canvas"></canvas>
         <div class="hero-content-wrapper">
           <div class="hero-content">
+            <img src="../assets/images/hero/ag2-logo.png" alt="">
             <h1 class="hero-lead">Privacy</h1>
             <h4 class="h-alt hero-secondary">Your Privacy Matters</h4>
           </div>
@@ -191,11 +192,12 @@
   </div>
 
   <!-- ========== Privacy Policy ========== -->
-
-  <section class="container section">
+  <div class="testimonials-parallax">
+    <div class="bg-overlay">
+      <section class="container section dark-bg" style="background: transparent !important; padding-top: 50px !important;">
     <header class="sec-heading">
-      <h2>Privacy Policy</h2>
-      <span class="subheading">Last updated: March 2026</span>
+      <h2 style="color: #fff !important;">Privacy Policy</h2>
+      <span class="subheading" style="color: rgba(255,255,255,0.6) !important;">Last updated: March 2026</span>
     </header>
 
     <div class="row ws-s">
@@ -203,12 +205,12 @@
       <!-- Privacy Group 1 -->
       <div class="col-md-6">
         <div class="faq-group-header ws-s">
-          <h4 class="mb-30">Overview</h4>
+          <h4 class="modern-section-header">Overview</h4>
           <p>How we handle your data.</p>
         </div>
 
         <!-- Privacy Accordion -->
-        <div class="accordion accordions-1 ws-s" id="privacy-accordion-1">
+        <div class="accordion accordions-1 ws-s modern-accordions" id="privacy-accordion-1">
 
           <!-- Item 1 -->
           <div class="accordion-item">
@@ -325,12 +327,12 @@
       <!-- Privacy Group 2 -->
       <div class="col-md-6">
         <div class="faq-group-header ws-s">
-          <h4 class="mb-30">Third-Party Services</h4>
+          <h4 class="modern-section-header">Third-Party Services</h4>
           <p>Services used by this website and their privacy practices.</p>
         </div>
 
         <!-- Privacy Accordion -->
-        <div class="accordion ws-s accordions-1" id="privacy-accordion-2">
+        <div class="accordion ws-s accordions-1 modern-accordions" id="privacy-accordion-2">
 
           <!-- Item 1 -->
           <div class="accordion-item">
@@ -488,7 +490,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="faq-group-header ws-s">
-          <h4 class="mb-30">Contact</h4>
+          <h4 class="modern-section-header">Contact</h4>
           <p>Questions about this privacy policy.</p>
         </div>
 
@@ -504,7 +506,10 @@
           volunteers. Response times may vary.</p>
       </div>
     </div>
-  </section><!-- / .container -->
+      </div>
+    </section><!-- / .container -->
+    </div><!-- / .bg-overlay -->
+  </div><!-- / .testimonials-parallax -->
 
 
 

@@ -176,12 +176,13 @@
 
   <!-- ========== LargeHeader Canvas ========== -->
 
-  <div id="home" class="agency2-hero">
+  <div id="home" class="agency2-hero compact-hero">
     <div class="bg-overlay">
-      <div id="large-header" class="large-header">
+      <div id="large-header" class="large-header compact-hero">
         <canvas id="demo-canvas" class="demo-canvas"></canvas>
         <div class="hero-content-wrapper">
           <div class="hero-content">
+            <img src="../assets/images/hero/ag2-logo.png" alt="">
             <h1 class="hero-lead">FAQ</h1>
             <h4 class="h-alt hero-secondary">Frequently Asked Questions</h4>
           </div>
@@ -191,11 +192,12 @@
   </div>
 
   <!-- ========== FAQ Layout - 1 ========== -->
-
-  <section class="container section">
+  <div class="testimonials-parallax">
+    <div class="bg-overlay">
+      <section class="container section dark-bg" style="background: transparent !important; padding-top: 50px !important;">
     <header class="sec-heading">
-      <h2>General Questions</h2>
-      <span class="subheading">Frequently Asked Questions</span>
+      <h2 style="color: #fff !important;">General Questions</h2>
+      <span class="subheading" style="color: rgba(255,255,255,0.6) !important;">Frequently Asked Questions</span>
     </header>
 
     <div class="row ws-s">
@@ -203,12 +205,12 @@
       <!-- FAQ Group 1 -->
       <div class="col-md-6">
         <div class="faq-group-header ws-s">
-          <h4 class="mb-30">General</h4>
+          <h4 class="modern-section-header">General</h4>
           <p>General questions about Blackcoin.</p>
         </div>
 
         <!-- FAQ Accordion -->
-        <div class="accordion accordions-1 ws-s" id="faq-accordion-1">
+        <div class="accordion accordions-1 ws-s modern-accordions" id="faq-accordion-1">
 
           <!-- Item 1 -->
           <div class="accordion-item">
@@ -546,12 +548,12 @@
       <!-- FAQ Group 2 -->
       <div class="col-md-6">
         <div class="faq-group-header ws-s">
-          <h4 class="mb-30">Wallet</h4>
+          <h4 class="modern-section-header">Wallet</h4>
           <p>Wallet related questions/issues.</p>
         </div>
 
         <!-- FAQ Accordion -->
-        <div class="accordion ws-s accordions-1" id="faq-accordion-2">
+        <div class="accordion ws-s accordions-1 modern-accordions" id="faq-accordion-2">
 
           <!-- Item 1 -->
           <div class="accordion-item">
@@ -822,12 +824,17 @@
 
       <!-- FAQ Group 3 -->
 
-      <div class="col-md-6">
-        <span class="faq-contact-links"><i class="fa fa-info-circle"></i> If you have more questions <a
-            href="https://discord.blackcoin.nl" target="_blank">contact us on Discord.</a></span>
+      <div class="col-md-6" style="margin-top: 20px; line-height: 1.5;">
+        <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0;">
+          <span style="opacity: 0.5;"><i class="fa fa-info-circle"></i> If you have more questions</span> 
+          <a href="https://discord.blackcoin.nl" target="_blank" style="color: #ddb77a !important; font-weight: 700;">contact us on Discord</a>
+        </p>
       </div><!-- / .col-md-6 -->
     </div><!-- / .row -->
-  </section><!-- / .container -->
+      </div>
+    </section><!-- / .container -->
+    </div><!-- / .bg-overlay -->
+  </div><!-- / .testimonials-parallax -->
 
 
 

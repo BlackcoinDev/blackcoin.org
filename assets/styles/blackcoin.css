@@ -165,7 +165,7 @@
 	color: #111 !important;
 }
 
-.team-section-header {
+.modern-section-header {
 	color: #fff !important;
 	font-size: 18px !important;
 	font-weight: 700 !important;
@@ -175,6 +175,147 @@
 	display: inline-block;
 	border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 	padding-bottom: 10px;
+}
+
+/* Glassmorphic Accordions */
+.modern-accordions .accordion-item {
+	background: rgba(255, 255, 255, 0.03) !important;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.1) !important;
+	border-radius: 12px !important;
+	margin-bottom: 15px !important;
+	overflow: hidden;
+}
+
+.modern-accordions .accordion-button {
+	background: transparent !important;
+	color: #fff !important;
+	font-weight: 600 !important;
+	box-shadow: none !important;
+	padding: 20px 25px !important;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+
+.modern-accordions .accordion-button:not(.collapsed) {
+	background: rgba(255, 255, 255, 0.08) !important;
+	color: #fff !important;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.modern-accordions .accordion-button::after {
+	filter: invert(1) brightness(1.5);
+}
+
+.modern-accordions .accordion-body {
+	background: transparent !important;
+	color: rgba(255, 255, 255, 0.75) !important;
+	padding: 25px !important;
+	line-height: 1.7;
+	font-weight: 300;
+}
+
+/* Modern Parallax & Scroll Polishing */
+.testimonials-parallax {
+	background: #0a0a0a !important;
+	background-image: 
+		radial-gradient(circle at center, rgba(20, 20, 25, 0.5) 0%, rgba(5, 5, 5, 0.95) 100%),
+		url('../images/hero/tri.jpg') !important; /* Kept tri.jpg for subtle depth, masked by gradient */
+	background-size: cover !important;
+	background-attachment: fixed !important;
+	margin: 0 !important;
+	border: none !important;
+}
+
+.testimonials-parallax .bg-overlay {
+	background: rgba(0, 0, 0, 0.3) !important; /* Lighter overlay because the background itself is now darker */
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+}
+
+/* Ensure seamless transitions between parallax sections */
+.testimonials-parallax + .testimonials-parallax {
+	margin-top: -1px !important; /* Slight overlap to prevent sub-pixel gaps */
+}
+
+.section.dark-bg {
+	padding-top: 60px !important;
+	padding-bottom: 60px !important;
+}
+
+/* Perfect Flex Alignment for About Section Feature Items */
+.about-features .row {
+	display: flex !important;
+	align-items: stretch !important; /* Force columns to same height */
+}
+
+.about-features .left-features,
+.about-features .right-features {
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: space-between !important; /* Spread items evenly */
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
+}
+
+.about-features .ft-material {
+	display: flex !important;
+	align-items: center !important;
+	margin-bottom: 0 !important; /* spacing handled by space-between */
+	min-height: 120px;
+	border: none !important;
+	background: transparent !important;
+	padding: 0 !important;
+}
+
+/* Left Column: Text Right-aligned, Icon on the RIGHT */
+.about-features .left-features .ft-material {
+	flex-direction: row !important;
+	text-align: right;
+}
+
+/* Right Column: Text Left-aligned, Icon on the LEFT */
+.about-features .right-features .ft-material {
+	flex-direction: row-reverse !important;
+	text-align: left;
+}
+
+.about-features .ft-content {
+	flex: 1;
+	padding: 0 20px;
+}
+
+.about-features .ft-content h5 {
+	margin-top: 0 !important;
+	margin-bottom: 5px !important;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.about-features .ft-content p {
+	margin-bottom: 0 !important;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+.about-features .ft-icon {
+	width: 90px !important;
+	height: 90px !important;
+	flex-shrink: 0;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	background: white;
+	border-radius: 50%;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.about-features .ft-icon i {
+	font-size: 32px !important;
+	margin: 0 !important;
+	display: block !important;
 }
 
 /* Responsive Grid Adjustments */
