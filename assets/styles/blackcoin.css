@@ -143,52 +143,278 @@
 }
 
 /* ==========================================================================
-   Bootstrap 3 Typography Restoration (Fixes BS5 16px/1rem Jump)
+   Production Parity Restoration (Matches blackcoin.dev exactly)
+   Ultra-Specific Overrides to ensure victory over vendor CSS
    ========================================================================== */
-body {
+
+html body {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  color: #444 !important;
+  /* Removed -webkit-font-smoothing: antialiased to match production's bolder rendering */
+}
+
+html body p {
+  margin: 0 0 25px !important;
+}
+
+/* Container Constrain (BS3 LG was 1170px) */
+html body .container {
+  max-width: 1170px !important;
+}
+
+/* Grid Gutter Restoration (BS3 was 30px) */
+html body .row {
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+}
+
+html body .row > [class^="col-"],
+html body .row > [class*=" col-"] {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+/* Heading Scales (Production Baseline) */
+html body h1, html body .h1 { font-size: 36px !important; }
+html body h2, html body .h2 { font-size: 32px !important; } /* Restored to BS3 32px */
+html body h3, html body .h3 { font-size: 24px !important; }
+html body h4, html body .h4 { font-size: 18px !important; }
+html body h5, html body .h5 { font-size: 14px !important; text-transform: uppercase; letter-spacing: 2px; }
+
+/* Hero Unit Specifics (Major Difference found in Audit) */
+html body .hero-content h1 {
+  font-size: 64px !important;
+  line-height: 1.1 !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 20px !important;
+}
+
+html body .hero-content h5 {
   font-size: 14px !important;
-  line-height: 1.42857143 !important;
-  color: #333;
+  letter-spacing: 4px !important;
+  margin-bottom: 20px !important;
 }
 
-p {
-  margin: 0 0 10px !important;
+/* Navbar Restoration (Matches #111 BG and 75px Height) */
+html body .navbar {
+  background-color: transparent !important; /* Starts transparent via .navbar-trans in index.html */
+  background: transparent !important;
+  min-height: 75px !important;
+  padding: 0 !important;
+  border: none !important; /* Fixes "White Bar" below navbar */
+  box-shadow: none !important;
+  transition: background-color 0.4s ease, padding 0.4s ease !important;
 }
 
-/* Restore BS3 Heading Scales */
-h1, .h1 { font-size: 36px !important; margin-top: 20px !important; margin-bottom: 10px !important; }
-h2, .h2 { font-size: 30px !important; margin-top: 20px !important; margin-bottom: 10px !important; }
-h3, .h3 { font-size: 24px !important; margin-top: 20px !important; margin-bottom: 10px !important; }
-h4, .h4 { font-size: 18px !important; margin-top: 10px !important; margin-bottom: 10px !important; }
-h5, .h5 { font-size: 14px !important; margin-top: 10px !important; margin-bottom: 10px !important; }
-h6, .h6 { font-size: 12px !important; margin-top: 10px !important; margin-bottom: 10px !important; }
-
-/* Navbar Font Size */
-.navbar-nav {
-  font-size: 14px !important;
+/* Scrolled / Non-Transparent State */
+html body .navbar:not(.navbar-trans),
+html body .navbar.navbar-small,
+html body .navbar.mobile-nav {
+  background-color: #111 !important;
+  background: #111 !important;
 }
 
-/* Small text restoration */
-small, .small {
-  font-size: 85% !important;
+html body .navbar .navbar-header,
+html body .navbar .navbar-nav {
+  margin-top: 0 !important;
 }
 
-/* Button & Dropdown Font Size Restoration */
-.btn {
-  font-size: 14px !important;
-  line-height: 1.42857143 !important;
+html body .navbar .navbar-nav .nav-link {
+  padding-top: 27.5px !important;  /* (75px - 20px line-height) / 2 */
+  padding-bottom: 27.5px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
+  color: #999 !important; /* Production BS3 color */
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  transition: all 0.3s ease;
 }
 
-.dropdown-menu {
-  font-size: 14px !important;
+html body .navbar .navbar-nav .nav-link:hover,
+html body .navbar .navbar-nav .nav-link.active {
+  color: #ddb77a !important;
+  background: transparent !important;
 }
 
-.dropdown-item {
-  font-size: 14px !important;
-  padding: 3px 20px !important;
+/* Navbar Badge Restoration (Matches BS3 label-red square style) */
+html body .navbar .badge {
+  border-radius: 0 !important;
+  background-color: #db211e !important; /* BS3 label-red */
+  font-size: 12.8px !important;
+  padding: 2px 7px 4px !important;
+  margin-left: 5px !important;
+  vertical-align: top !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
 }
 
 /* Navbar Brand Restoration */
-.navbar-brand {
+html body .navbar .navbar-brand {
+  display: flex !important;
+  align-items: center !important;
+  line-height: 1 !important;
   font-size: 18px !important;
+  padding-top: 22.5px !important; /* (75px - 30px logo height) / 2 */
+  padding-bottom: 22.5px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  margin: 0 !important;
+}
+
+/* Breaking News Ticker Restoration (Matches 154px width and 13px font) */
+html body .breakingNews .bn-title h2 {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+}
+
+html body .breakingNews .bn-title {
+  width: auto !important;
+  min-width: 154px !important;
+}
+
+html body .breakingNews ul li h6 {
+  font-size: 13px !important;
+  font-weight: normal !important;
+}
+
+html body .breakingNews ul li h6 a {
+  font-size: 13px !important;
+  font-weight: normal !important;
+}
+
+html body .breakingNews ul li a {
+  font-size: 13px !important;
+}
+
+/* Dropdown Menu Aesthetics */
+html body .navbar .dropdown-menu {
+  background-color: #111 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5) !important;
+}
+
+html body .navbar .dropdown-item {
+  font-size: 13px !important;
+  color: #999 !important;
+  padding: 10px 20px !important;
+  background: transparent !important;
+}
+
+html body .navbar .dropdown-item:hover {
+  color: #ddb77a !important;
+  padding-left: 25px !important;
+  background-color: rgba(255,255,255,0.05) !important;
+}
+
+/* Navbar Hover Dropdowns (Logic preserved) */
+@media (min-width: 992px) {
+  html body .navbar .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block !important;
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Mobile Toggler Restoration */
+html body .navbar .navbar-toggler {
+  border: none !important;
+  padding: 15px !important;
+}
+
+html body .navbar .navbar-toggler:focus {
+  box-shadow: none !important;
+}
+/* Accordion "Tile" Style Restoration (FAQ & Privacy) */
+html body .accordion-item {
+  background-color: transparent !important;
+  border: none !important;
+  margin-bottom: 25px !important; /* Space between tiles */
+}
+
+html body .accordion-button {
+  background-color: #f8f8f8 !important;
+  color: #333 !important;
+  padding: 25px 20px 25px 50px !important; /* Left aligned with 50px padding */
+  font-size: 10px !important; /* Restored to BS3 small elegant size */
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important; /* Spaced out for readability */
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  justify-content: flex-start !important; /* Left aligned like BS3 */
+}
+
+/* Remove BS5 Chevron */
+html body .accordion-button::after {
+  display: none !important;
+}
+
+/* Open State Header */
+html body .accordion-button:not(.collapsed) {
+  background-color: #f1f1f1 !important; /* Slightly darker when open for contrast */
+  color: #ddb77a !important;
+  box-shadow: none !important;
+}
+
+html body .accordion-button:focus {
+  box-shadow: none !important;
+}
+
+/* Accordion Body */
+html body .accordion-body {
+  background-color: #f8f8f8 !important;
+  padding: 30px 50px !important;
+  color: #444 !important;
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  border-top: 1px solid rgba(0,0,0,0.05) !important;
+}
+/* Support Blackcoin Section Parity */
+html body .support-blackcoin h3 {
+  font-size: 20.8px !important; /* Exact BS3 metric */
+  margin-top: 20px !important;  /* Restores the 48.8px total offset */
+  margin-bottom: 20px !important;
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+}
+
+html body .support-blackcoin .donations-content {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+}
+
+/* Footer Social Links Parity */
+html body .footer-social-links ul {
+  list-style: none !important;
+  padding: 65px 0 !important;
+  margin: 0 !important;
+  text-align: center !important;
+}
+
+html body .footer-social-links ul li {
+  display: inline-block !important;
+  margin: 0 10px !important;
+}
+
+html body .footer-social-links ul li a {
+  font-size: 10px !important; /* Exact BS3 metric (Tiny/Elegant) */
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  color: #ccc !important;
+  transition: color 0.3s ease;
+}
+
+html body .footer-social-links ul li a:hover {
+  color: #ddb77a !important;
 }

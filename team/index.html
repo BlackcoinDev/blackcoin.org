@@ -61,45 +61,40 @@
 
   <!-- ========== Navigation ========== -->
 
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top mega navbar-trans" role="navigation">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top mega navbar-trans">
     <div class="container">
-      <div class="navbar-header">
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-          aria-expanded="false" aria-controls="navbar">
-          <span class="visually-hidden">Toggle navigation</span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Logo -->
-        <a class="navbar-brand" href="../"><img src="../assets/images/logo-light.png" alt="Blackcoin - Logo"></a>
-      </div><!-- / .navbar-header -->
+      <!-- Brand and Toggler -->
+      <a class="navbar-brand" href="../"><img src="../assets/images/logo-light.png" alt="Blackcoin logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <span class="visually-hidden">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <!-- Navbar Links -->
       <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-
+        <ul class="navbar-nav me-auto">
           <!-- Home -->
-          <li class="dropdown mega-fw">
-            <a href="../">Home</a>
+          <li class="nav-item dropdown mega-fw">
+            <a href="../" class="nav-link">Home</a>
           </li><!-- / Home -->
 
-
           <!-- Discover -->
-          <li class="dropdown">
-            <a href="/#" class="dropdown-toggle" data-bs-toggle="dropdown"
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
               role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ddb77a;">Discover
               </span><span class="caret"></span></a>
             <ul class="dropdown-menu">
               <div class="row">
                 <!-- Basic -->
                 <div class="col-lg-6 mb-sm-30">
-                  <li><a href="../#about">About</a></li>
-                  <!--<li><a href="bounties/">Bounties</a></li>-->
-                  <li><a href="../#community">Community</a></li>
-                  <li><a href="../#donations">Donations</a></li>
-                  <li><a href="../team/"><span style="color: #ddb77a;">Team</span></a></li>
-                  <!--<li><a href="#features">Features</a></li>-->
-                  <li><a href="../faq/">FAQ</a></li>
+                  <li><a class="dropdown-item" href="../#about">About</a></li>
+                  <!--<li><a class="dropdown-item" href="../bounties/">Bounties</a></li>-->
+                  <li><a class="dropdown-item" href="../#community">Community</a></li>
+                  <li><a class="dropdown-item" href="../#donations">Donations</a></li>
+                  <li><a class="dropdown-item" href="../team/">Team</a></li>
+                  <!--<li><a class="dropdown-item" href="../#features">Features</a></li>-->
+                  <li><a class="dropdown-item" href="../faq/"><span style="color: #ddb77a;">FAQ</span></a></li>
+                  <li><a class="dropdown-item" href="../privacy/">Privacy</a></li>
                 </div>
               </div><!-- / .row -->
             </ul><!-- / .dropdown-menu -->
@@ -107,14 +102,14 @@
 
 
           <!-- Buy -->
-          <li class="dropdown mega-fw">
-            <a href="../#buy">Buy </a>
+          <li class="nav-item dropdown mega-fw">
+            <a href="../#buy" class="nav-link">Buy </a>
           </li><!-- / Buy -->
 
 
           <!-- Downloads -->
-          <li class="dropdown mega-fw">
-            <a href="../#downloads">Downloads </a>
+          <li class="nav-item dropdown mega-fw">
+            <a href="../#downloads" class="nav-link">Downloads </a>
           </li><!-- / Downloads -->
 
 
@@ -122,64 +117,60 @@
 
 
         <!-- Navbar Links Right -->
-        <ul class="nav navbar-nav ms-auto">
-
-
+        <ul class="navbar-nav ms-auto">
           <!-- Links -->
-          <li class="dropdown">
-            <a href="../#" class="dropdown-toggle" data-bs-toggle="dropdown"
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
               role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ddb77a;">Links </span><span
                 class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="https://chainz.cryptoid.info/blk/">CryptoID Explorer</a></li>
-              <li><a href="https://www.coingecko.com/en/coins/blackcoin">Coingecko</a></li>
-              <li><a href="https://coinmarketcap.com/currencies/blackcoin/#charts">Coinmarketcap</a></li>
-              <li><a href="https://coinpaprika.com/coin/blk-blackcoin/">Coinpaprika</a></li>
-              <li><a href="https://blackcoin.nl">BlackcoinNL</a></li>
-              <!-- <li><a href="https://bitinfocharts.com/blackcoin/">Bitinfocharts Explorer</a></li> -->
-              <li><a href="https://gitlab.com/blackcoin/">Gitlab</a></li>
-              <li><a href="https://github.com/CoinBlack/">Github</a></li>
+              <li><a class="dropdown-item" href="https://chainz.cryptoid.info/blk/">CryptoID Explorer</a></li>
+              <li><a class="dropdown-item" href="https://www.coingecko.com/en/coins/blackcoin">Coingecko</a></li>
+              <li><a class="dropdown-item" href="https://coinmarketcap.com/currencies/blackcoin/#charts">Coinmarketcap</a></li>
+              <li><a class="dropdown-item" href="https://coinpaprika.com/coin/blk-blackcoin/">Coinpaprika</a></li>
+              <li><a class="dropdown-item" href="https://blackcoin.nl">BlackcoinNL</a></li>
+              <!-- <li><a class="dropdown-item" href="https://bitinfocharts.com/blackcoin/">Bitinfocharts Explorer</a></li> -->
+              <li><a class="dropdown-item" href="https://github.com/CoinBlack/">Github</a></li>
+              <li><a class="dropdown-item" href="https://gitlab.com/blackcoin/">Gitlab</a></li>
             </ul>
           </li><!-- / Links -->
 
           <!-- News -->
-
-          <li class="dropdown mega-fw">
-            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"
+          <li class="nav-item dropdown mega-fw">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
               role="button" aria-haspopup="true" aria-expanded="false"><span class="badge bg-danger">News </span><span
                 class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <div class="row" style="margin: 0; padding: 15px 0;">
-                    <div class="col-lg-6 mb-sm-20">
-                      <li class="dropdown-header">Markets</li>
-                      <li role="separator" class="divider"></li>
+            <ul class="dropdown-menu">
+              <div class="row" style="margin: 0; padding: 15px 0;">
+                <div class="col-lg-6 mb-sm-20">
+                  <li class="dropdown-header">Markets</li>
+                  <li role="separator" class="divider"></li>
 
-                      <div style="padding: 0 20px;">
-                        <script src="https://widgets.coingecko.com/gecko-coin-ticker-widget.js"></script>
-                        <gecko-coin-ticker-widget locale="en" dark-mode="true" transparent-background="true"
-                          coin-id="blackcoin" initial-currency="usd"></gecko-coin-ticker-widget>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6 mb-sm-20">
-                      <li class="dropdown-header">X</li>
-                      <li role="separator" class="divider"></li>
-
-                      <div class="textwidget">
-                        <center>
-                          <p style="background-color: #171717; padding: 20px;">
-                            <a href="https://x.com/BlackcoinOrg" target="_blank" rel="noopener" style="color: #ddb77a;">@BlackcoinOrg on X</a><br><br>
-                            <a href="https://x.com/BlackcoinNL" target="_blank" rel="noopener" style="color: #ddb77a;">@BlackcoinNL on X</a>
-                          </p>
-                        </center>
-                      </div>
-                    </div>
+                  <div style="padding: 0 20px;">
+                    <script src="https://widgets.coingecko.com/gecko-coin-ticker-widget.js"></script>
+                    <gecko-coin-ticker-widget locale="en" dark-mode="true" transparent-background="true"
+                      coin-id="blackcoin" initial-currency="usd"></gecko-coin-ticker-widget>
                   </div>
-                </ul>
+                </div>
+
+                <div class="col-lg-6 mb-sm-20">
+                  <li class="dropdown-header">X</li>
+                  <li role="separator" class="divider"></li>
+
+                  <div class="textwidget">
+                    <center>
+                      <p style="background-color: #171717; padding: 20px;">
+                        <a href="https://x.com/BlackcoinOrg" target="_blank" rel="noopener" style="color: #ddb77a;">@BlackcoinOrg on X</a><br><br>
+                        <a href="https://x.com/BlackcoinNL" target="_blank" rel="noopener" style="color: #ddb77a;">@BlackcoinNL on X</a>
+                      </p>
+                    </center>
+                  </div>
+                </div>
+              </div>
+            </ul>
           </li><!-- / News -->
         </ul><!-- / .nav .navbar-nav .ms-auto -->
       </div>
-      <!--/.navbar-collapse -->
     </div><!-- / .container -->
   </nav><!-- / .navbar -->
 
