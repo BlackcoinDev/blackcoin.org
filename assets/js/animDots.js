@@ -11,7 +11,16 @@ function animDots(x) {
                 s = window.innerWidth, u = window.innerHeight, g = {
                     x: s / 2,
                     y: u / 2
-                }, w = document.getElementById("large-header"), w.style.height = u + "px", f = document.getElementById("demo-canvas"), f.width = s, f.height = u, h = f.getContext("2d"), v = [];
+                }, w = document.getElementById("large-header");
+                
+                // Allow CSS to override height if .compact-hero is present
+                if (w.classList.contains("compact-hero")) {
+                    u = w.offsetHeight || 400;
+                } else {
+                    w.style.height = u + "px";
+                }
+                
+                f = document.getElementById("demo-canvas"), f.width = s, f.height = u, h = f.getContext("2d"), v = [];
                 for (var e = 0; s > e; e += s / 18)
                     for (var n = 0; u > n; n += u / 18) {
                         var t = e + Math.random() * s / 18,
@@ -54,7 +63,13 @@ function animDots(x) {
             }
 
             function o() {
-                s = window.innerWidth, u = window.innerHeight, w.style.height = u + "px", f.width = s, f.height = u
+                s = window.innerWidth, u = window.innerHeight;
+                if (w.classList.contains("compact-hero")) {
+                    u = w.offsetHeight || 400;
+                } else {
+                    w.style.height = u + "px";
+                }
+                f.width = s, f.height = u
             }
 
             function a() {

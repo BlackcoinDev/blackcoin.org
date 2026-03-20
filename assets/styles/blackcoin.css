@@ -66,6 +66,136 @@
 	position: relative;
 }
 
+/* Compact Hero for subpages */
+.compact-hero {
+	height: 400px !important;
+	min-height: 400px !important;
+	padding-bottom: 0 !important;
+}
+
+.compact-hero .hero-content {
+	top: 50% !important;
+	transform: translateY(-50%);
+	padding-top: 75px !important; /* Offset for the 75px navbar */
+}
+
+.compact-hero .large-header {
+	height: 400px !important;
+}
+
+/* Modern Glassmorphic Tiles */
+.modern-tiles {
+	padding: 60px 0;
+}
+
+.modern-tiles ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.modern-tiles ul li {
+	float: none !important;
+	width: calc(25% - 20px) !important;
+	margin: 0 !important;
+	background: rgba(255, 255, 255, 0.05) !important;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.1) !important;
+	border-radius: 15px !important;
+	transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+	overflow: hidden;
+	padding: 40px 20px !important;
+	text-align: center;
+	position: relative;
+}
+
+.modern-tiles ul li:hover {
+	background: rgba(255, 255, 255, 0.12) !important;
+	border-color: rgba(255, 255, 255, 0.3) !important;
+	transform: translateY(-8px);
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.modern-tiles ul li h5 {
+	color: #fff !important;
+	font-weight: 600 !important;
+	margin-top: 15px !important;
+	margin-bottom: 5px !important;
+	font-size: 16px !important;
+	text-transform: uppercase;
+}
+
+.modern-tiles ul li h6 {
+	color: rgba(255, 255, 255, 0.6) !important;
+	letter-spacing: 2px !important;
+	text-transform: uppercase !important;
+	font-size: 10px !important;
+	margin-bottom: 0 !important;
+}
+
+.modern-tiles ul li .hover-content {
+	background: rgba(10, 10, 10, 0.92) !important;
+	backdrop-filter: blur(8px);
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.modern-tiles ul li .hover-content a {
+	color: #fff !important;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	padding: 8px 20px;
+	border-radius: 20px;
+	transition: all 0.3s ease;
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 1px;
+}
+
+.modern-tiles ul li .hover-content a:hover {
+	background: #fff;
+	color: #111 !important;
+}
+
+.team-section-header {
+	color: #fff !important;
+	font-size: 18px !important;
+	font-weight: 700 !important;
+	letter-spacing: 2px !important;
+	text-transform: uppercase !important;
+	margin-bottom: 30px !important;
+	display: inline-block;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+	padding-bottom: 10px;
+}
+
+/* Responsive Grid Adjustments */
+@media (max-width: 1199px) {
+	.modern-tiles ul li {
+		width: calc(33.33% - 20px) !important;
+	}
+}
+
+@media (max-width: 991px) {
+	.modern-tiles ul li {
+		width: calc(50% - 20px) !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.modern-tiles ul li {
+		width: 100% !important;
+	}
+}
+
 @media (min-width: 1259px) {
 	.navbar-nav .dropdown:hover .dropdown-menu {
 		display: block !important;
