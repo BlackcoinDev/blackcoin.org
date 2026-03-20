@@ -245,6 +245,15 @@
 	padding-bottom: 60px !important;
 }
 
+/* Fix for Branding Links (Gold must stay Gold) */
+.gold-link, 
+.gold-link:visited, 
+.gold-link:hover, 
+.gold-link:active {
+	color: #ddb77a !important;
+	text-decoration: none !important;
+}
+
 /* Perfect Flex Alignment for About Section Feature Items */
 .about-features .row {
 	display: flex !important;
