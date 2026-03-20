@@ -77,8 +77,8 @@
 
           <!-- Discover -->
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-              role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ddb77a;">Discover
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false"><span style="color: #ddb77a;">Discover
               </span><span class="caret"></span></a>
             <ul class="dropdown-menu">
               <div class="row">
@@ -117,13 +117,13 @@
         <ul class="navbar-nav ms-auto">
           <!-- Links -->
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-              role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ddb77a;">Links </span><span
-                class="caret"></span></a>
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false"><span style="color: #ddb77a;">Links </span><span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="https://chainz.cryptoid.info/blk/">CryptoID Explorer</a></li>
               <li><a class="dropdown-item" href="https://www.coingecko.com/en/coins/blackcoin">Coingecko</a></li>
-              <li><a class="dropdown-item" href="https://coinmarketcap.com/currencies/blackcoin/#charts">Coinmarketcap</a></li>
+              <li><a class="dropdown-item"
+                  href="https://coinmarketcap.com/currencies/blackcoin/#charts">Coinmarketcap</a></li>
               <li><a class="dropdown-item" href="https://coinpaprika.com/coin/blk-blackcoin/">Coinpaprika</a></li>
               <li><a class="dropdown-item" href="https://blackcoin.nl">BlackcoinNL</a></li>
               <!-- <li><a class="dropdown-item" href="https://bitinfocharts.com/blackcoin/">Bitinfocharts Explorer</a></li> -->
@@ -134,9 +134,8 @@
 
           <!-- News -->
           <li class="nav-item dropdown mega-fw">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-              role="button" aria-haspopup="true" aria-expanded="false"><span class="badge bg-danger">News </span><span
-                class="caret"></span></a>
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false"><span class="badge bg-danger">News </span><span class="caret"></span></a>
             <ul class="dropdown-menu">
               <div class="row" style="margin: 0; padding: 15px 0;">
                 <div class="col-lg-6 mb-sm-20">
@@ -157,8 +156,10 @@
                   <div class="textwidget">
                     <center>
                       <p style="background-color: #171717; padding: 20px;">
-                        <a href="https://x.com/BlackcoinOrg" target="_blank" rel="noopener" style="color: #ddb77a;">@BlackcoinOrg on X</a><br><br>
-                        <a href="https://x.com/BlackcoinNL" target="_blank" rel="noopener" style="color: #ddb77a;">@BlackcoinNL on X</a>
+                        <a href="https://x.com/BlackcoinOrg" target="_blank" rel="noopener"
+                          style="color: #ddb77a;">@BlackcoinOrg on X</a><br><br>
+                        <a href="https://x.com/BlackcoinNL" target="_blank" rel="noopener"
+                          style="color: #ddb77a;">@BlackcoinNL on X</a>
                       </p>
                     </center>
                   </div>
@@ -173,8 +174,15 @@
 
   <!-- ========== END HEAD ========== -->
 
+  <!-- ========== LargeHeader Canvas ========== -->
 
-
+  <div id="home" class="agency2-hero">
+    <div class="bg-overlay">
+      <div id="large-header" class="large-header">
+        <canvas id="demo-canvas" class="demo-canvas"></canvas>
+      </div>
+    </div>
+  </div>
 
   <!-- ========== Privacy Policy ========== -->
 
@@ -199,15 +207,21 @@
           <!-- Item 1 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="privacy-1-h-1">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-1-collapse-1" data-bs-parent="#privacy-accordion-1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#privacy-1-collapse-1" data-bs-parent="#privacy-accordion-1">
                 DO WE COLLECT YOUR DATA?
               </button>
             </h2>
             <div id="privacy-1-collapse-1" class="accordion-collapse collapse">
               <div class="accordion-body">
-                <span style="color: #c19959;">No.</span> This website does not use cookies, tracking scripts, analytics services, or any data collection mechanisms that we control. <p></p>
-                We do not collect, store, process, or sell any personal data. We do not require accounts, logins, or any personally identifiable information. <p></p>
-                All website assets (JavaScript libraries, CSS frameworks, fonts, images) are <span style="color: #c19959;">self-hosted</span> and served from our own domain. We do not load any scripts, fonts, or trackers from external CDNs or third-party servers (with the exception of the CoinGecko widget, documented below).
+                <span style="color: #c19959;">No.</span> This website does not use cookies, tracking scripts, analytics
+                services, or any data collection mechanisms that we control. <p></p>
+                We do not collect, store, process, or sell any personal data. We do not require accounts, logins, or any
+                personally identifiable information. <p></p>
+                All website assets (JavaScript libraries, CSS frameworks, fonts, images) are <span
+                  style="color: #c19959;">self-hosted</span> and served from our own domain. We do not load any scripts,
+                fonts, or trackers from external CDNs or third-party servers (with the exception of the CoinGecko
+                widget, documented below).
               </div>
             </div>
           </div><!-- / .accordion-item -->
@@ -215,13 +229,15 @@
           <!-- Item 2 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="privacy-1-h-2">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-1-collapse-2" data-bs-parent="#privacy-accordion-1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#privacy-1-collapse-2" data-bs-parent="#privacy-accordion-1">
                 WHAT SERVICES DOES THIS SITE USE?
               </button>
             </h2>
             <div id="privacy-1-collapse-2" class="accordion-collapse collapse">
               <div class="accordion-body">
-                This website is hosted on <span style="color: #c19959;">GitHub Pages</span> and uses the following external services:
+                This website is hosted on <span style="color: #c19959;">GitHub Pages</span> and uses the following
+                external services:
                 <p></p>
                 <ul style="padding-left: 20px; margin-top: 10px;">
                   <li><strong>Cloudflare</strong> - DNS and content delivery (see below)</li>
@@ -229,9 +245,12 @@
                   <li><strong>GitHub Pages</strong> - Website hosting</li>
                 </ul>
                 <p></p>
-                Each of these services may collect data according to their own privacy policies. We have no control over Cloudflare's data practices. Links to their privacy policies are provided below.
+                Each of these services may collect data according to their own privacy policies. We have no control over
+                Cloudflare's data practices. Links to their privacy policies are provided below.
                 <p></p>
-                <span style="color: #c19959;">External links:</span> This website contains links to external sites (blockchain explorers, exchanges, social media, wallets). These are regular links that users choose to click. No data is sent to these sites until you click them. Each has its own privacy policy.
+                <span style="color: #c19959;">External links:</span> This website contains links to external sites
+                (blockchain explorers, exchanges, social media, wallets). These are regular links that users choose to
+                click. No data is sent to these sites until you click them. Each has its own privacy policy.
               </div>
             </div>
           </div><!-- / .accordion-item -->
@@ -239,13 +258,15 @@
           <!-- Item 3 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="privacy-1-h-3">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-1-collapse-3" data-bs-parent="#privacy-accordion-1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#privacy-1-collapse-3" data-bs-parent="#privacy-accordion-1">
                 WHY DO I SEE CLOUDFLARE IN MY BROWSER?
               </button>
             </h2>
             <div id="privacy-1-collapse-3" class="accordion-collapse collapse">
               <div class="accordion-body">
-                This domain (blackcoin.org) uses <span style="color: #c19959;">Cloudflare as its DNS provider</span>. Cloudflare sits between the website and visitors, providing:
+                This domain (blackcoin.org) uses <span style="color: #c19959;">Cloudflare as its DNS provider</span>.
+                Cloudflare sits between the website and visitors, providing:
                 <p></p>
                 <ul style="padding-left: 20px; margin-top: 10px;">
                   <li>DNS resolution</li>
@@ -254,8 +275,11 @@
                   <li>Performance optimization</li>
                 </ul>
                 <p></p>
-                <span style="color: #c19959;">We do not have control over Cloudflare's analytics or data collection.</span> Cloudflare may collect analytics data, serve scripts, or track visitor behavior according to their own policies. This is outside our control. <p></p>
-                If you block Cloudflare's beacon.min.js script in your browser, the website will continue to function normally. The site itself does not require Cloudflare to work - it only needs DNS to resolve.
+                <span style="color: #c19959;">We do not have control over Cloudflare's analytics or data
+                  collection.</span> Cloudflare may collect analytics data, serve scripts, or track visitor behavior
+                according to their own policies. This is outside our control. <p></p>
+                If you block Cloudflare's beacon.min.js script in your browser, the website will continue to function
+                normally. The site itself does not require Cloudflare to work - it only needs DNS to resolve.
               </div>
             </div>
           </div><!-- / .accordion-item -->
@@ -263,13 +287,16 @@
           <!-- Item 4 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="privacy-1-h-4">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-1-collapse-4" data-bs-parent="#privacy-accordion-1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#privacy-1-collapse-4" data-bs-parent="#privacy-accordion-1">
                 WHAT ABOUT OTHER WEBSITES?
               </button>
             </h2>
             <div id="privacy-1-collapse-4" class="accordion-collapse collapse">
               <div class="accordion-body">
-                This privacy policy applies <span style="color: #c19959;">only to blackcoin.org and blackcoin.dev</span>. Other websites related to Blackcoin (such as blackcoin.nl, blackcoinmore.org, exchanges, social media) have their own privacy policies and data practices. <p></p>
+                This privacy policy applies <span style="color: #c19959;">only to blackcoin.org and
+                  blackcoin.dev</span>. Other websites related to Blackcoin (such as blackcoin.nl, blackcoinmore.org,
+                exchanges, social media) have their own privacy policies and data practices. <p></p>
                 The official Blackcoin websites are:
                 <ul style="padding-left: 20px; margin-top: 10px;">
                   <li><span style="color: #c19959;">blackcoin.org</span> (this site)</li>
@@ -302,17 +329,25 @@
           <!-- Item 1 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="privacy-2-h-1">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-2-collapse-1" data-bs-parent="#privacy-accordion-2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#privacy-2-collapse-1" data-bs-parent="#privacy-accordion-2">
                 CLOUDFLARE
               </button>
             </h2>
             <div id="privacy-2-collapse-1" class="accordion-collapse collapse">
               <div class="accordion-body">
-                <strong>What it does:</strong> Cloudflare provides DNS (Domain Name System) resolution and acts as a proxy between visitors and GitHub Pages where this site is hosted. <p></p>
-                <strong>Data collected:</strong> Cloudflare may collect <span style="color: #c19959;">IP addresses, browser information, request logs, and analytics data</span>. They may also inject scripts (like beacon.min.js) for analytics. <p></p>
-                <strong>Our control:</strong> <span style="color: #c19959;">None</span>. The domain uses Cloudflare nameservers, but we do not have access to the Cloudflare account controlling them. <p></p>
-                <strong>Privacy policy:</strong> <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a> <p></p>
-                <strong>How to opt-out:</strong> Use browser extensions that block Cloudflare scripts, or use privacy-focused DNS resolvers.
+                <strong>What it does:</strong> Cloudflare provides DNS (Domain Name System) resolution and acts as a
+                proxy between visitors and GitHub Pages where this site is hosted. <p></p>
+                <strong>Data collected:</strong> Cloudflare may collect <span style="color: #c19959;">IP addresses,
+                  browser information, request logs, and analytics data</span>. They may also inject scripts (like
+                beacon.min.js) for analytics. <p></p>
+                <strong>Our control:</strong> <span style="color: #c19959;">None</span>. The domain uses Cloudflare
+                nameservers, but we do not have access to the Cloudflare account controlling them. <p></p>
+                <strong>Privacy policy:</strong> <a href="https://www.cloudflare.com/privacypolicy/" target="_blank"
+                  rel="noopener">cloudflare.com/privacypolicy</a>
+                <p></p>
+                <strong>How to opt-out:</strong> Use browser extensions that block Cloudflare scripts, or use
+                privacy-focused DNS resolvers.
               </div>
             </div>
           </div><!-- / .accordion-item -->
@@ -320,16 +355,23 @@
           <!-- Item 2 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="privacy-2-h-2">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-2-collapse-2" data-bs-parent="#privacy-accordion-2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#privacy-2-collapse-2" data-bs-parent="#privacy-accordion-2">
                 COINGECKO WIDGET
               </button>
             </h2>
             <div id="privacy-2-collapse-2" class="accordion-collapse collapse">
               <div class="accordion-body">
-                <strong>What it does:</strong> Displays live cryptocurrency price data for Blackcoin (BLK) in the navigation menu. <p></p>
-                <strong>Data collected:</strong> CoinGecko may collect <span style="color: #c19959;">IP addresses and usage statistics</span> for the widget. No personally identifiable information is required to view the price data. <p></p>
-                <strong>Our control:</strong> We chose to include this widget. It loads from widgets.coingecko.com. <p></p>
-                <strong>Privacy policy:</strong> <a href="https://www.coingecko.com/en/privacy" target="_blank" rel="noopener">coingecko.com/privacy</a> <p></p>
+                <strong>What it does:</strong> Displays live cryptocurrency price data for Blackcoin (BLK) in the
+                navigation menu. <p></p>
+                <strong>Data collected:</strong> CoinGecko may collect <span style="color: #c19959;">IP addresses and
+                  usage statistics</span> for the widget. No personally identifiable information is required to view the
+                price data. <p></p>
+                <strong>Our control:</strong> We chose to include this widget. It loads from widgets.coingecko.com. <p>
+                </p>
+                <strong>Privacy policy:</strong> <a href="https://www.coingecko.com/en/privacy" target="_blank"
+                  rel="noopener">coingecko.com/privacy</a>
+                <p></p>
                 <strong>How to opt-out:</strong> Block widgets.coingecko.com in your browser or use a script blocker.
               </div>
             </div>
@@ -338,16 +380,24 @@
           <!-- Item 3 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="privacy-2-h-3">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-2-collapse-3" data-bs-parent="#privacy-accordion-2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#privacy-2-collapse-3" data-bs-parent="#privacy-accordion-2">
                 GITHUB PAGES
               </button>
             </h2>
             <div id="privacy-2-collapse-3" class="accordion-collapse collapse">
               <div class="accordion-body">
-                <strong>What it does:</strong> Hosts the website files and serves them to visitors through GitHub's global CDN. <p></p>
-                <strong>Data collected:</strong> GitHub Pages may log <span style="color: #c19959;">IP addresses, request data, and browser user agents</span> for technical purposes. These logs are typically not persistent. <p></p>
-                <strong>Our control:</strong> We host the site on GitHub Pages and can modify the content at any time. <p></p>
-                <strong>Privacy policy:</strong> <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a> <p></p>
+                <strong>What it does:</strong> Hosts the website files and serves them to visitors through GitHub's
+                global CDN. <p></p>
+                <strong>Data collected:</strong> GitHub Pages may log <span style="color: #c19959;">IP addresses,
+                  request data, and browser user agents</span> for technical purposes. These logs are typically not
+                persistent. <p></p>
+                <strong>Our control:</strong> We host the site on GitHub Pages and can modify the content at any time.
+                <p></p>
+                <strong>Privacy policy:</strong> <a
+                  href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
+                  target="_blank" rel="noopener">GitHub Privacy Statement</a>
+                <p></p>
                 <strong>Note:</strong> GitHub Pages does not inject tracking scripts into your website.
               </div>
             </div>
@@ -356,16 +406,23 @@
           <!-- Item 4 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="privacy-2-h-4">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-2-collapse-4" data-bs-parent="#privacy-accordion-2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#privacy-2-collapse-4" data-bs-parent="#privacy-accordion-2">
                 GITHUB (SOURCE CODE)
               </button>
             </h2>
             <div id="privacy-2-collapse-4" class="accordion-collapse collapse">
               <div class="accordion-body">
-                <strong>What it does:</strong> The source code for this website is publicly available on GitHub. Anyone can view, fork, or contribute to the codebase. <p></p>
-                <strong>Repository:</strong> <a href="https://github.com/CoinBlack/" target="_blank" rel="noopener">github.com/CoinBlack</a> <p></p>
-                <strong>Data collected:</strong> GitHub may collect data about who visits the repository (logged-in users). The website code itself does not contain any tracking code. <p></p>
-                <strong>Transparency:</strong> All website code is <span style="color: #c19959;">open source</span> and can be audited by anyone. We removed Google Tag Manager, Twitter widgets, and other tracking scripts in March 2026.
+                <strong>What it does:</strong> The source code for this website is publicly available on GitHub. Anyone
+                can view, fork, or contribute to the codebase. <p></p>
+                <strong>Repository:</strong> <a href="https://github.com/CoinBlack/" target="_blank"
+                  rel="noopener">github.com/CoinBlack</a>
+                <p></p>
+                <strong>Data collected:</strong> GitHub may collect data about who visits the repository (logged-in
+                users). The website code itself does not contain any tracking code. <p></p>
+                <strong>Transparency:</strong> All website code is <span style="color: #c19959;">open source</span> and
+                can be audited by anyone. We removed Google Tag Manager, Twitter widgets, and other tracking scripts in
+                March 2026.
               </div>
             </div>
           </div><!-- / .accordion-item -->
@@ -373,7 +430,8 @@
           <!-- Item 5 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="privacy-2-h-5">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-2-collapse-5" data-bs-parent="#privacy-accordion-2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#privacy-2-collapse-5" data-bs-parent="#privacy-accordion-2">
                 EXTERNAL LINKS
               </button>
             </h2>
@@ -387,7 +445,9 @@
                   <li>Wallet downloads (Coinomi, Komodo)</li>
                 </ul>
                 <p></p>
-                <span style="color: #c19959;">We are not responsible for the privacy practices of these external sites.</span> Each has its own privacy policy. We recommend reviewing their policies before providing any personal information.
+                <span style="color: #c19959;">We are not responsible for the privacy practices of these external
+                  sites.</span> Each has its own privacy policy. We recommend reviewing their policies before providing
+                any personal information.
               </div>
             </div>
           </div><!-- / .accordion-item -->
@@ -395,16 +455,20 @@
           <!-- Item 6 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="privacy-2-h-6">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-2-collapse-6" data-bs-parent="#privacy-accordion-2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#privacy-2-collapse-6" data-bs-parent="#privacy-accordion-2">
                 WALLET DOWNLOADS
               </button>
             </h2>
             <div id="privacy-2-collapse-6" class="accordion-collapse collapse">
               <div class="accordion-body">
                 Wallet downloads are hosted directly on this website and GitHub. <p></p>
-                <strong>What we host:</strong> Wallet executables (.zip files) and documentation (.pdf files) in the assets/ directory. <p></p>
-                <strong>Data collected:</strong> <span style="color: #c19959;">None.</span> Downloads are served directly from GitHub Pages without any tracking or analytics. <p></p>
-                <strong>Security:</strong> We recommend verifying checksums and downloading only from official sources. The only official Blackcoin websites are listed in our FAQ.
+                <strong>What we host:</strong> Wallet executables (.zip files) and documentation (.pdf files) in the
+                assets/ directory. <p></p>
+                <strong>Data collected:</strong> <span style="color: #c19959;">None.</span> Downloads are served
+                directly from GitHub Pages without any tracking or analytics. <p></p>
+                <strong>Security:</strong> We recommend verifying checksums and downloading only from official sources.
+                The only official Blackcoin websites are listed in our FAQ.
               </div>
             </div>
           </div><!-- / .accordion-item -->
@@ -425,11 +489,13 @@
         <p>If you have questions about this privacy policy or the data practices described here:</p>
         <ul style="padding-left: 20px; margin-top: 10px;">
           <li>Join our <a href="https://discord.blackcoin.nl" target="_blank" rel="noopener">Discord server</a></li>
-          <li>Visit <a href="https://github.com/CoinBlack/" target="_blank" rel="noopener">GitHub</a> to view the source code or open an issue</li>
+          <li>Visit <a href="https://github.com/CoinBlack/" target="_blank" rel="noopener">GitHub</a> to view the source
+            code or open an issue</li>
           <li>Follow <a href="https://x.com/BlackcoinOrg" target="_blank" rel="noopener">@BlackcoinOrg on X</a></li>
         </ul>
 
-        <p style="margin-top: 20px;"><span style="color: #c19959;">Note:</span> This website is maintained by community volunteers. Response times may vary.</p>
+        <p style="margin-top: 20px;"><span style="color: #c19959;">Note:</span> This website is maintained by community
+          volunteers. Response times may vary.</p>
       </div>
     </div>
   </section><!-- / .container -->
@@ -449,7 +515,8 @@
         <div class="row">
 
           <div class="col-sm-6">
-            <small>&copy; 2014-2026 Blackcoin. All Rights Reserved. &nbsp;|&nbsp; <a href="../privacy/">Privacy Policy</a></small>
+            <small>&copy; 2014-2026 Blackcoin. All Rights Reserved. &nbsp;|&nbsp; <a href="../privacy/">Privacy
+                Policy</a></small>
           </div>
 
           <div class="col-sm-6">
@@ -474,6 +541,8 @@
 
   <!-- Definity JS -->
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/gsap.min.js"></script>
+  <script src="../assets/js/animDots.js"></script>
 </body>
 
 </html>
